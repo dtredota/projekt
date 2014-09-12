@@ -13,7 +13,7 @@ selected = print_interface
 case selected
 when "1"
       print "Podaj nazwę zadania: "
-      $lista_zadan <<< gets.chomp
+      $lista_zadan <<<< gets.chomp
       
 when "2"
       $lista_zadan.to_enum.with_index(0).each do |elem, i|
